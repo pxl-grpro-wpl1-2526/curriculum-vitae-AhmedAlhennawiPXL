@@ -9,3 +9,14 @@
 .profile-photo:hover {
     box-shadow: 0 0 15px rgba(100, 128, 255, 0.8);
 }
+section {
+    background: rgba(233, 236, 239, 0.04);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+section:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-4px);
+}
