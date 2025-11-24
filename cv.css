@@ -20,3 +20,26 @@ section:hover {
     background: rgba(255,255,255,0.08);
     transform: translateY(-4px);
 }
+.lings {
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+.footer-right {
+    text-align: right;
+    margin-left: auto;
+}
+.midde{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+.lings{
+    text-align: left;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 25px;
+    background: rgba(255, 255, 255, 0.05);
+}
