@@ -65,3 +65,90 @@ body {
 .back-top:hover {
     box-shadow: 0 0 15px rgb(16, 16, 16);
 }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e5e5e5;
+    background-color: #1c1f26;
+    line-height: 1.6;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #e5e5e5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+p {
+    opacity: 0;
+    animation: fadeIn 1.3s ease forwards;
+}
+h2{
+    color: #7aa6ff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+h1 {
+    font-size: 32px;
+    color: #7aa6ff;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #7aa6ff;
+    transition: width 0.4s ease;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #7aa6ff;
+    transition: width 0.8s ease;
+    border-radius: 2px;
+}
+
+
+section:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
