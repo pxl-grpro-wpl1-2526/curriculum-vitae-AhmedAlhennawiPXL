@@ -148,6 +148,21 @@ section {
 
 
 }
+@media (max-width: 575px) {
+    .container {
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+}
 
 
 
