@@ -1,21 +1,50 @@
 .profile-photo {
-    width: 160px;
-    height: 160px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 12px;
     border: 2px solid #0077cc;
     cursor: pointer;
+
+    animation: moveRight 1.8s ease-in-out forwards;
+}
+header .box1 {
+    text-align: center;
+    border: 2px solid #0077cc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    margin:auto;
+}
+@keyframes moveRight {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    40% {
+        transform: scale(1.4) translateX(0);
+    }
+    70% {
+        transform: scale(0.85) translateX(0);
+    }
+    100% {
+        transform: scale(0.85) translateX(29.5vw) translateY(-59px);
+    }
+}
+.box1{
+    align-items: center;
+    text-align: center;
 }
 .profile-photo:hover {
     box-shadow: 0 0 15px rgba(100, 128, 255, 0.8);
 }
-section {
+section,h4{
     background: rgba(233, 236, 239, 0.04);
     padding: 20px;
-    margin: 20px 0;
+    margin: 30px 15px;
     border-radius: 12px;
     transition: 0.4s ease;
 }
+
 section:hover {
     background: rgba(255,255,255,0.08);
     transform: translateY(-4px);
@@ -24,8 +53,8 @@ section:hover {
     padding: 4px 10px;
     border-radius: 8px;
 }
-.footer-right {
-    text-align: right;
+.footer-right {    text-align: right;
+
     margin-left: auto;
 }
 .midde{
@@ -34,7 +63,7 @@ section:hover {
     transform: translate(-50%)
 }
 .lings{
-    text-align: left;
+    text-align: center;
 }
 footer {
     display: flex;
@@ -46,12 +75,12 @@ footer {
 body {
     background: linear-gradient(135deg, #2b2d42, #3a3f58, #4e5973);
     color: #f4f4f4;
-}
-body {
     animation: fadeIn 1s ease forwards;
     opacity: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 160px;
 }
-
 @keyframes fadeIn {
     to { opacity: 1; }
 }
@@ -65,33 +94,18 @@ body {
 .back-top:hover {
     box-shadow: 0 0 15px rgb(16, 16, 16);
 }
-
-body {
-    font-family: Arial, sans-serif;
-    color: #e5e5e5;
-    background-color: #1c1f26;
-    line-height: 1.6;
-    margin: 0;
-}
-
-p {
-    font-size: 16px;
-    color: #e5e5e5;
-}
-
 ul {
     padding-left: 20px;
+    text-align: center;
 }
 
 li {
     margin-bottom: 6px;
-}
-p {
-    opacity: 0;
-    animation: fadeIn 1.3s ease forwards;
+    text-align: center;
 }
 h2{
     color: #7aa6ff;
+    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -119,7 +133,6 @@ h1::after {
 h1:hover::after {
     width: 100%;
 }
-
 section::after {
     content: "";
     position: absolute;
@@ -132,7 +145,6 @@ section::after {
     z-index: -100;
 }
 
-
 section:hover::after {
     width: 100%;
 }
@@ -140,13 +152,6 @@ section:hover::after {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
-}
-section {
-    flex: 1;
-    min-width: 250px;
-
-
 }
 @media (max-width: 575px) {
     .container {
@@ -163,10 +168,46 @@ section {
         flex-direction: column;
     }
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+th, td {
+    padding: 10px;
+    text-align: center;
+}
 
+tr:nth-child(even) {
+    background: rgba(255,255,255,0.05);
+}
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 
+}
 
+.ont .boxes {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.ont .boxes section {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box4 {
+    text-align: right;
+}
+.box5 {
+    text-align: center;
+}
+.box6 {
+    text-align: left;
+}
 
 
 
